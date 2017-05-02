@@ -138,16 +138,7 @@ gulp.task('watch', function () {
 
 gulp.task('clean', ['clean:dist', 'clean:tmp', 'clean:build']);
 
-// gulp.task('build', ['clean', 'compile']);
-gulp.task('build', function () {
-    return del([
-        'node_modules/angular2-notifications/**/*.ts',
-        '!node_modules/angular2-notifications/**/*.d.ts',
-        'dist/*',
-        'clean', 
-        'compile'
-    ], {force: true});
-});
+gulp.task('build', ['clean', 'compile']);
 gulp.task('build:watch', ['build', 'watch']);
 gulp.task('default', ['build:watch']);
 
