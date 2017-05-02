@@ -1,9 +1,11 @@
 /*
     Handle Error Messages class. 
     
-    There are a number of reasons why errors may occur, including the file not existing, the user not having permission to access the desired file, or the user cancelling the file upload.
+    There are a number of reasons why errors may occur, including the file not existing,
+    the user not having permission to access the desired file, or the user cancelling the file upload.
 
-    To properly diagnose the issue and handle the error, here is a full list of all the errors our client will raise, and how they occurred.
+    To properly diagnose the issue and handle the error, here is a full list of all the errors 
+    our client will raise, and how they occurred.
 
     This class generate method to show error text. 
 
@@ -33,7 +35,8 @@ export class NoObjectExistError extends ErrorMessages {
     }
 }
 
-// The maximum time limit on an operation (upload, download, delete, etc.) has been excceded. Try uploading again.
+/* The maximum time limit on an operation (upload, download, delete, etc.) 
+has been excceded. Try uploading again.*/
 export class LimitExceedError extends ErrorMessages {
     constructor(str: string = 'The maximum time limit on an operation (upload, download, delete, etc.) has been excceded. Try uploading again.') {
         super(str);

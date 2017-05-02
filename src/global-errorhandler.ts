@@ -38,7 +38,7 @@ export class GlobalErrorHandler extends ErrorHandler {
     }
 }
 
-enum ErrorMode {
+export enum ErrorMode {
     All = 0,
     Notification = 1,
     Console = 2,

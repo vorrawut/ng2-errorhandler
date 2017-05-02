@@ -4,6 +4,7 @@ import { SampleComponent } from './sample.component';
 import { SampleDirective } from './sample.directive';
 import { SamplePipe } from './sample.pipe';
 import { GlobalErrorHandler } from './global-errorhandler';
+import { SimpleNotificationsModule } from 'angular2-notifications';
 
 export * from './sample.component';
 export * from './sample.directive';
@@ -12,7 +13,8 @@ export * from './global-errorhandler';
 
 @NgModule({
   imports: [
-    CommonModule
+    CommonModule,
+    SimpleNotificationsModule
   ],
   declarations: [
     SampleComponent,

@@ -63,6 +63,7 @@
     "node": ">=6.0.0"
   },
   "dependencies": {
+    "@angular/animations": "^4.1.0",
     "angular2-notifications": "^0.7.2"
   }
 }
